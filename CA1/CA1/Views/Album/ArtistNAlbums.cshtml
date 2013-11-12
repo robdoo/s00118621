@@ -1,0 +1,9 @@
+﻿@model CA1.Artist
+
+@{
+    ViewBag.Title = "ArtistsNAlbums";
+}
+
+<h2>Albums of @Model.Name</h2>
+
+@Html.Partial("_Albums",Model.Albums)
